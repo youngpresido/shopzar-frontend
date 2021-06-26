@@ -1,1 +1,158 @@
 /* You can add global styles to this file, and also import other style files */
+// @import 'tailwindcss/base';
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+$font-family: "'Noto Sans', 'Helvetica Neue', sans-serif";
+$custom-typography: mat-typography-config(
+  $font-family: "'Noto Sans', 'Helvetica Neue', sans-serif",
+  $headline: mat-typography-level(32px, 36px, 700, $letter-spacing: -0.05em),
+  $title: mat-typography-level(16px, 18px, 400, $letter-spacing: 0.01em),
+  $subheading-2: mat-typography-level(16px, 18px, 400, $letter-spacing: -0.05em),
+  $body-1: mat-typography-level(12px, 14px, 400),
+  $body-2: mat-typography-level(14px, 16px, 700),
+  $button: mat-typography-level(12px, 14px, 400),
+  $caption:
+    mat-typography-level(11px, 13px, 400, $font-family: "'Noto Sans', sans-serif"),
+);
+
+// ================ Custom Pallete =================
+$gt-primary: (
+  50: #ff803b,
+  900: #dd4f05,
+  A700: #a41900,
+  contrast: (
+    50: $dark-primary-text,
+    900: $light-primary-text,
+    A700: $light-primary-text,
+  ),
+);
+
+$gt-accent: (
+  50: #ffffff,
+  900: #e3e3e3,
+  A700: #b1b1b1,
+  contrast: (
+    50: $dark-primary-text,
+    900: $dark-primary-text,
+    A700: $dark-primary-text,
+  ),
+);
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core($custom-typography);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$am-primary: mat-palette($gt-primary, 900, 50, A700);
+$am-accent: mat-palette($gt-accent, 900, 50, A700);
+
+// The warn palette is optional (defaults to red).
+$am-warn: mat-palette($mat-red, 300, 100, 600);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$am-theme: mat-light-theme(
+  (
+    color: (
+      primary: $am-primary,
+      accent: $am-accent,
+      warn: $am-warn,
+    ),
+    typography: $custom-typography,
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($am-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", "Helvetica Neue", sans-serif;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #e6e6e6;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #949494bb;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fd8308;
+  }
+
+  h4,
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.snackbar {
+  .text-primary {
+    color: #dd4f05;
+  }
+
+  .text-warn {
+    color: #db0202;
+  }
+
+  .text-success {
+    color: #008000;
+  }
+}
+
+// Angular Material Overrides
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 48px;
+}
+
+.mat-form-field {
+  width: 100%;
+  input {
+  line-height: 1.2;
+  }
+}
+
+.mat-raised-button {
+  color: white;
+  background-color: green;
+}
+
+th.mat-header-cell {
+  .mat-checkbox-frame {
+    border-color: #ffffff;
+  }
+}
+
+.mat-snack-bar-container {
+  background: #ffffff;
+  color: #000000;
+  padding: 1.5rem 2rem;
+}
