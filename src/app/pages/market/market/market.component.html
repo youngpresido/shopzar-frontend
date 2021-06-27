@@ -1,1 +1,18 @@
-<p>market works!</p>
+<mat-sidenav-container class="example-container ">
+  <mat-sidenav mode="side" opened class="example-sidenav sidebar-fixed">
+    <app-navigation></app-navigation>
+    <div class="dotted-sep mt-10"></div>
+    <div class="bottom-menu">
+      <div class="about text-center">
+        <img class="mr-2" src="/assets/img/ic.info.svg" />
+        <span>shoper is on development</span>
+      </div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content class="example-content mr-100">
+  <app-main-toolbar></app-main-toolbar>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
