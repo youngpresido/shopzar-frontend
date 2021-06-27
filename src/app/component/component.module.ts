@@ -6,6 +6,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MaterialUiModule } from '../utilities/material-ui.module';
+import { TestComponent } from './test/test.component';
 
 
 
@@ -13,7 +14,8 @@ import { MaterialUiModule } from '../utilities/material-ui.module';
   declarations: [
     NavigationComponent,
     MainToolbarComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    TestComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { MaterialUiModule } from '../utilities/material-ui.module';
   exports: [
     NavigationComponent,
     MainToolbarComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    TestComponent
   ]
 })
 export class ComponentModule { }

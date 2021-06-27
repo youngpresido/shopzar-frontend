@@ -1,1 +1,15 @@
-<p>main-toolbar works!</p>
+<mat-toolbar id="main" class="example-toolbar">
+  <!-- <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="outline" [style.width.px]="350" [style.height.px]="5">
+      <mat-label>Search</mat-label>
+      <input matInput placeholder="" value="Sushi">
+    </mat-form-field>
+  </form> -->
+  <div class="spacer"></div>
+  <div class="toolbar-actions">
+    <button mat-icon-button>
+      <mat-icon color="accent">notifications</mat-icon>
+    </button>
+  </div>
+  <app-user-details></app-user-details>
+</mat-toolbar>
