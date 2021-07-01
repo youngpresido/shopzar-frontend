@@ -8,122 +8,312 @@ import {MatTreeFlatDataSource, MatTreeFlattener} from '@angular/material/tree';
  */
 interface FoodNode {
   name: string;
+  path: string;
+  title?: string;
   children?: FoodNode[];
 }
 
 const TREE_DATA: FoodNode[] = [
   {
     name: 'Fruit',
+    path: 'Fruit',
     children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
+      {
+        title: 'chinwe',
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      title: 'chinwe',
+      name: 'Apple',
+      path: 'Fruit',
+
+  },
+  {
+    title: 'chinwe',
+    name: 'Apple',
+    path: 'Fruit',
+
+},
+]
+  },
+  {
+    name: 'Fruit',
+    path: 'Fruit',
+    children: [
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      name: 'Apple',
+      path: 'Fruit',
+
+  },
+  {
+    name: 'Apple',
+    path: 'Fruit',
+
+},
     ]
   },
   {
     name: 'Fruit',
+    path: 'Fruit',
     children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      name: 'Apple',
+      path: 'Fruit',
+
+  },
+  {
+    name: 'Apple',
+    path: 'Fruit',
+
+},
     ]
   },
   {
     name: 'Fruit',
+    path: 'Fruit',
     children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      name: 'Apple',
+      path: 'Fruit',
+
+  },
+  {
+    name: 'Apple',
+    path: 'Fruit',
+
+},
     ]
   },
   {
     name: 'Fruit',
+    path: 'Fruit',
     children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
-    ]
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      name: 'Apple',
+      path: 'Fruit',
+
   },
   {
-    name: 'Fruit',
-    children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
+    name: 'Apple',
+    path: 'Fruit',
+
+},
     ]
   },
 
   {
     name: 'Fruit',
+    path: 'Fruit',
     children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      name: 'Apple',
+      path: 'Fruit',
+
+  },
+  {
+    name: 'Apple',
+    path: 'Fruit',
+
+},
     ]
   },
   {
     name: 'Fruit',
+    path: 'Fruit',
     children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      name: 'Apple',
+      path: 'Fruit',
+
+  },
+  {
+    name: 'Apple',
+    path: 'Fruit',
+
+},
     ]
   },
   {
     name: 'Fruit',
+    path: 'Fruit',
     children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      name: 'Apple',
+      path: 'Fruit',
+
+  },
+  {
+    name: 'Apple',
+    path: 'Fruit',
+
+},
     ]
   },
   {
     name: 'Fruit',
+    path: 'Fruit',
     children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      name: 'Apple',
+      path: 'Fruit',
+
+  },
+  {
+    name: 'Apple',
+    path: 'Fruit',
+
+},
     ]
   },
   {
     name: 'Fruit',
+    path: 'Fruit',
     children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      name: 'Apple',
+      path: 'Fruit',
+
+  },
+  {
+    name: 'Apple',
+    path: 'Fruit',
+
+},
     ]
   },
   {
     name: 'Fruit',
+    path: 'Fruit',
     children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      name: 'Apple',
+      path: 'Fruit',
+
+  },
+  {
+    name: 'Apple',
+    path: 'Fruit',
+
+},
     ]
   },
   {
     name: 'Fruit',
+    path: 'Fruit',
     children: [
-      {name: 'Apple'},
-      {name: 'Banana'},
-      {name: 'Fruit loops'},
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
+    {
+      name: 'Apple',
+      path: 'Fruit',
+
+  },
+  {
+    name: 'Apple',
+    path: 'Fruit',
+
+},
     ]
   },
 
   {
     name: 'Vegetables',
+    path: 'Fruit',
     children: [
       {
-        name: 'Green',
+        name: 'Fruit',
+        path: 'Fruit',
         children: [
-          {name: 'Broccoli'},
-          {name: 'Brussels sprouts'},
+          {
+            name: 'Apple',
+            path: 'Fruit',
+
+        },
+        {
+          name: 'Apple',
+          path: 'Fruit',
+
+      },
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
         ]
       }, {
-        name: 'Orange',
+        name: 'Fruit',
+        path: 'Fruit',
         children: [
-          {name: 'Pumpkins'},
-          {name: 'Carrots'},
+          {
+            name: 'Apple',
+            path: 'Fruit',
+
+        },
+        {
+          name: 'Apple',
+          path: 'Fruit',
+
+      },
+      {
+        name: 'Apple',
+        path: 'Fruit',
+
+    },
         ]
       },
     ]

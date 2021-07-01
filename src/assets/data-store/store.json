@@ -1,0 +1,301 @@
+{
+"submenuObject": {
+
+  "accounts": [{
+          "state": "statement",
+          "main_state": "accounts",
+          "short_label": "AS",
+          "name": "Account Statement",
+          "type": "link",
+          "icon": "card-statement"
+      },
+      {
+          "state": "generate-statement",
+          "main_state": "accounts",
+          "short_label": "AS",
+          "name": "Statement to Third-Party",
+          "type": "link",
+          "icon": "send-statement"
+      },
+      {
+          "state": "open-dom-account",
+          "main_state": "accounts",
+          "short_label": "AS",
+          "name": "Open Domiciliary Account",
+          "type": "link",
+          "icon": "open-dom-account-1"
+      },
+      {
+          "state": "additional-account",
+          "main_state": "accounts",
+          "short_label": "AS",
+          "name": "Open Additional Account",
+          "type": "link",
+          "icon": "open-dom-account"
+      },
+      {
+          "state": "account-upgrade",
+          "main_state": "accounts",
+          "short_label": "UA",
+          "name": "Update & Upgrade Account",
+          "type": "link",
+          "icon": "account-upgrade"
+      },
+      {
+          "state": "profile-account",
+          "main_state": "accounts",
+          "short_label": "PA",
+          "name": "Profile & Unprofile Account",
+          "type": "link",
+          "icon": "account-upgrade"
+      },
+      {
+          "state": "secure-email",
+          "main_state": "accounts",
+          "short_label": "SM",
+          "name": "Secure Email",
+          "type": "link",
+          "icon": "secure-email"
+      },
+      {
+          "state": "sachet-banking",
+          "main_state": "accounts",
+          "short_label": "SB",
+          "name": "Sachet Banking",
+          "type": "link",
+          "icon": "secure-email"
+      }
+  ],
+  "transfers": [{
+          "state": "GTBank",
+          "main_state": "transfers",
+          "short_label": "GT",
+          "name": "Transfer to GTBank",
+          "type": "link",
+          "icon": "gt"
+      },
+      {
+          "state": "other-banks",
+          "main_state": "transfers",
+          "short_label": "OT",
+          "name": "Transfer to Other Banks",
+          "type": "link",
+          "icon": "others"
+      },
+      {
+          "state": "own-account",
+          "main_state": "transfers",
+          "short_label": "OW",
+          "name": "Transfer to Own Account",
+          "type": "link",
+          "icon": "own-3"
+      },
+      {
+          "state": "phone",
+          "main_state": "transfers",
+          "short_label": "P",
+          "name": "Transfer via Phone/Email",
+          "type": "link",
+          "icon": "phone"
+      },
+      {
+          "state": "cardless-withdrawal",
+          "main_state": "transfers",
+          "short_label": "UA",
+          "name": "Cardless Cashout",
+          "type": "link",
+          "icon": "cardless-withdrawal-2"
+      },
+      {
+          "state": "standing-order",
+          "main_state": "transfers",
+          "short_label": "SO",
+          "name": "Standing Order",
+          "type": "link",
+          "icon": "standingOrder"
+      }
+  ],
+  "topup": [{
+          "state": "mtn",
+          "main_state": "topup",
+          "short_label": "MT",
+          "name": "MTN Nigeria",
+          "type": "link",
+          "icon": "mtn"
+      },
+      {
+          "state": "airtel",
+          "main_state": "topup",
+          "short_label": "AT",
+          "name": "AIRTEL Nigeria",
+          "type": "link",
+          "icon": "airtel"
+      },
+      {
+          "state": "nine-mobile",
+          "main_state": "topup",
+          "short_label": "9M",
+          "name": "9Mobile",
+          "type": "link",
+          "icon": "9mobile"
+      },
+      {
+          "state": "globacom",
+          "main_state": "topup",
+          "short_label": "GL",
+          "name": "Globacom Nigeria",
+          "type": "link",
+          "icon": "glo"
+      }
+  ],
+  "cards": [{
+          "state": "dispense-error",
+          "main_state": "cards",
+          "short_label": "DE",
+          "name": "Dispense Error",
+          "type": "link",
+          "icon": "dispense-error"
+      },
+      {
+          "state": "pin-retrieval",
+          "main_state": "cards",
+          "short_label": "PR",
+          "name": "PIN Retrieval",
+          "type": "link",
+          "icon": "pin-retrieval"
+      },
+      {
+          "state": "card-statement",
+          "main_state": "cards",
+          "short_label": "CS",
+          "name": "Card Statement",
+          "type": "link",
+          "icon": "card-statement"
+      },
+      {
+          "state": "card-replacement",
+          "main_state": "cards",
+          "short_label": "CR",
+          "name": "Card Request & Replacement",
+          "type": "link",
+          "icon": "card-replacement"
+      },
+      {
+          "state": "blocked-funds",
+          "main_state": "cards",
+          "short_label": "BF",
+          "name": "View Blocked Funds",
+          "type": "link",
+          "icon": "view-blocked-funds"
+      },
+      {
+          "state": "account-linking-delinking",
+          "main_state": "cards",
+          "short_label": "AL",
+          "name": "Account Linking & Delinking",
+          "type": "link",
+          "icon": "card-statement"
+      }
+  ],
+  "personalFinance": [{
+          "state": "loans",
+          "main_state": "personal-financing",
+          "short_label": "LO",
+          "name": "Loans",
+          "type": "link",
+          "icon": "loans-light"
+      },
+      {
+          "state": "gt-target",
+          "main_state": "personal-financing",
+          "short_label": "GT",
+          "name": "GT-Target",
+          "type": "link",
+          "icon": "gt-target-2"
+      },
+      {
+          "state": "spend-to-save",
+          "main_state": "personal-financing",
+          "short_label": "S2",
+          "name": "Spend2Save",
+          "type": "link",
+          "icon": "spend-to-save-3"
+      },
+      {
+          "state": "gt-invest",
+          "main_state": "personal-financing",
+          "short_label": "GI",
+          "name": "GT-Invest",
+          "type": "link",
+          "icon": "spend-to-save-3"
+      }
+  ],
+  "fx": [{
+          "state": "gtb-fx",
+          "main_state": "fx",
+          "short_label": "GT",
+          "name": "Fx Transfer to GT Bank",
+          "type": "link",
+          "icon": "fx-gt"
+      },
+      {
+          "state": "other-bank-fx",
+          "main_state": "fx",
+          "short_label": "OT",
+          "name": "Fx Transfer to Other Banks",
+          "type": "link",
+          "icon": "fx-other"
+      }
+  ],
+  "settings": [{
+          "state": "view-profile",
+          "main_state": "settings",
+          "short_label": "VP",
+          "name": "Customer Profile",
+          "type": "link",
+          "icon": "profile"
+      },
+      {
+          "state": "password-reset",
+          "main_state": "settings",
+          "short_label": "CP",
+          "name": "Change Password",
+          "type": "link",
+          "icon": "password-reset-2"
+      },
+      {
+          "state": "cheques",
+          "main_state": "settings",
+          "short_label": "CQ",
+          "name": "Cheques",
+          "type": "link",
+          "icon": "i-require-2"
+      },
+      {
+          "state": "reference-confirmation",
+          "main_state": "settings",
+          "short_label": "RC",
+          "name": "Reference Confirmation",
+          "type": "link",
+          "icon": "password-reset-2"
+      },
+      {
+          "state": "i-require",
+          "main_state": "settings",
+          "short_label": "IR",
+          "name": "I Require",
+          "type": "link",
+          "icon": "i-require-2"
+      },
+      {
+          "state": "general-settings",
+          "main_state": "settings",
+          "short_label": "GS",
+          "name": "General Settings",
+          "type": "link",
+          "icon": "password-reset-2"
+      }
+
+  ]
+}
+}

@@ -10,3 +10,35 @@
   left: 1050px;
   top: 4px;
 }
+
+mat-form-field {
+  height: 10px;
+  position: relative;
+  bottom: 14px;
+}
+
+.seerch-label {
+  font-size: 13px;
+  position: relative;
+  right: 270px;
+}
+
+.search-icon {
+  position: relative;
+  right: 340px;
+  top: 10px;
+}
+
+.mat-button-wrapper {
+  background-color: black;
+}
+
+input {
+  width: 297px;
+  height: 28px;
+  padding-left: 30px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgb(231, 231, 231);
+  border: 2px solid rgb(66, 66, 66);
+}
