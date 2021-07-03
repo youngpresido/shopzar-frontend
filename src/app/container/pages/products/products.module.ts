@@ -18,7 +18,7 @@ import { BulkUploadProductsComponent } from '../bulk-upload-products/bulk-upload
   declarations: [
     ProductsComponent,
     DashboardComponent,
-    OrderComponent,
+    // OrderComponent,
     SellersComponent,
     SellerReviewComponent,
     TransactionsComponent,
