@@ -1,6 +1,5 @@
 .mat-tree {
-  width: 0vW;
-  position: relative;
+  width: 100%;
   background-color: #3367d6;
   color: white;
   // left: 20px;
@@ -16,6 +15,6 @@ mat-tree-node{
 }
 
 mat-icon {
-  position: relative;
-  left: 60px;
+  position: fixed;
+  left: 100px;
 }
