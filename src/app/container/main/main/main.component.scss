@@ -14,12 +14,20 @@ mat-sidenav{
     padding: 16px;
     text-align: center;
 }
-mat-sidenav-content{
-  width: 100%;
-}
+// mat-sidenav-content{
+//   width: 100%;
+// }
 .example-sidenav{
   width: 14vw;
   background-color: #3367d6;
   padding: 25px;
 
+}
+
+.content{
+  overflow:hidden;
+}
+app-main-toolbar{
+  width:100%;
+  overflow: hidden;
 }
