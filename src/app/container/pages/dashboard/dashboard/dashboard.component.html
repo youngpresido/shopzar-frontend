@@ -2,18 +2,27 @@
   <div class="left-content">
   <div class="first-contaner ">
     <div class="f-card">
-      <mat-card class="f-card">Simple card</mat-card>
+      <mat-card class="f-card">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">shopping_bag</mat-icon>
+<p>Total Product</p>
+<p>223</p>
+
+      </mat-card>
     </div>
     <div class="s-card">
-      <mat-card class="s-card">Simple card</mat-card>
+      <mat-card class="s-card">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">supervisor_account</mat-icon>
+<p>Total Customers</p>
+<p>1223</p>
+</mat-card>
     </div>
   </div>
   <div class="second-container">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table-2">
       <!-- Position Column -->
-      <ng-container matColumnDef="position">
-        <th mat-header-cell *matHeaderCellDef>No.</th>
-        <td mat-cell *matCellDef="let element">{{element.position}}</td>
+      <ng-container matColumnDef="icon">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element"><mat-icon>{{element.icon}}</mat-icon>{{element.face}}</td>
       </ng-container>
 
       <!-- Name Column -->
@@ -48,9 +57,9 @@
   <div class="third-container">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table-3">
       <!-- Position Column -->
-      <ng-container matColumnDef="position">
-        <th mat-header-cell *matHeaderCellDef>No.</th>
-        <td mat-cell *matCellDef="let element">{{element.position}}</td>
+      <ng-container matColumnDef="icon">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element"><mat-icon>{{element.icon}}</mat-icon>{{element.perm_identity}}</td>
       </ng-container>
 
       <!-- Name Column -->
@@ -83,9 +92,9 @@
   <div class="fourth-container">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table-3">
       <!-- Position Column -->
-      <ng-container matColumnDef="position">
-        <th mat-header-cell *matHeaderCellDef>No.</th>
-        <td mat-cell *matCellDef="let element">{{element.position}}</td>
+      <ng-container matColumnDef="icon">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element"><mat-icon>{{element.icon}}</mat-icon>{{element.perm_identity}}</td>
       </ng-container>
 
       <!-- Name Column -->

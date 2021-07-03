@@ -192,6 +192,15 @@ th.mat-header-cell {
   padding: 1.5rem 2rem;
 }
 
+.mat-drawer-inner-container {
+  width: 100%;
+  height: 100%;
+  /* overflow: auto; */
+  // -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
