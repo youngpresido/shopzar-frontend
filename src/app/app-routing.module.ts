@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './container/main/main/main.component';
+import { DashComponent } from './dash/dash.component';
 
 
 const routes: Routes = [
@@ -9,7 +10,7 @@ const routes: Routes = [
     path: '',
     component: MainComponent,
     children:[
-      { path:"dashboard",  loadChildren: () => import('./container/pages/dashboard/dashboard.module').then(m => m.DashboardModule) },
+      { path:"dashboard", component: DashComponent },
       { path:"products",  loadChildren: () => import('./container/pages/products/products.module').then(m => m.ProductsModule) },
       { path:"orders",  loadChildren: () => import('./container/pages/order/order.module').then(m => m.OrderModule) }
     ]

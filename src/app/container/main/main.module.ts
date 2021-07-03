@@ -13,11 +13,13 @@ import { SellerReviewComponent } from '../pages/seller-review/seller-review/sell
 import { TransactionsComponent } from '../pages/transactions/transactions/transactions.component';
 import { BulkUploadDataFlowComponent } from '../pages/bulk-upload-data-flow/bulk-upload-data-flow/bulk-upload-data-flow.component';
 import { BulkUploadProductsComponent } from '../pages/bulk-upload-products/bulk-upload-products/bulk-upload-products.component';
+import { NavComponent } from 'src/app/nav/nav.component';
 
 
 @NgModule({
   declarations: [
     MainComponent,
+    NavComponent
     // ProductsComponent,
     // DashboardComponent,
     // OrderComponent,
@@ -31,7 +33,7 @@ import { BulkUploadProductsComponent } from '../pages/bulk-upload-products/bulk-
     CommonModule,
     MainRoutingModule,
     MaterialUiModule,
-    ComponentModule
+    ComponentModule,
   ]
 })
 export class MainModule { }
