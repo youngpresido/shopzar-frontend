@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialUiModule } from './utilities/material-ui.module';
 import { ComponentModule } from './component/component.module';
 import { CommonModule } from '@angular/common';
+import { MainModule } from './container/main/main.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     CommonModule,
+    MainModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

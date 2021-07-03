@@ -1,1 +1,11 @@
-<p>main works!</p>
+<mat-sidenav-container class="example-container ">
+  <mat-sidenav mode="side" opened class="example-sidenav sidebar-fixed">
+    <app-navigation></app-navigation>
+  </mat-sidenav>
+  <mat-sidenav-content class="example-content mr-100">
+  <app-main-toolbar></app-main-toolbar>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
