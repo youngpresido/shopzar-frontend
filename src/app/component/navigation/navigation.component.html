@@ -1,8 +1,5 @@
-
-<button mat-button [matMenuTriggerFor]="menu">
-  Dashboard
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-  </mat-menu>
-</button>
+<mat-nav-list class="nav-items">
+  <a mat-list-item routerLink="'/dashboard'">Dashboard</a>
+  <a mat-list-item routerLink="'/orders'">Orders</a>
+  <a mat-list-item href="#">Products</a>
+</mat-nav-list>
