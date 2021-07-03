@@ -1,0 +1,33 @@
+.table-container{
+  position: relative;
+  display: flex;
+  left: 119px;
+  top: 38px;
+}
+table {
+width: 80%;
+left: 119px;
+top: 38px;
+}
+.text {
+position: relative;
+left: 119px;
+top: 38px;
+}
+.top {
+width: 80%;
+display: flex;
+
+}
+
+
+
+input {
+width: 297px;
+height: 28px;
+padding-left: 30px;
+padding: 5px;
+border-radius: 20px;
+background-color: rgb(231, 231, 231);
+border: 2px solid rgb(66, 66, 66);
+}
