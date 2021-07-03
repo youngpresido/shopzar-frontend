@@ -9,7 +9,7 @@ import { MaterialUiModule } from 'src/app/utilities/material-ui.module';
 
 @NgModule({
   declarations: [
-    OrderComponent
+    // OrderComponent
   ],
   imports: [
     CommonModule,
