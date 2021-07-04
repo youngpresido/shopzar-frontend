@@ -18,15 +18,94 @@
 
 
 		<mat-nav-list>
-			<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+      <a mat-list-item [routerLink]="'/dashboard'">
         <mat-icon class="mat-icons" mat-list-icon>home</mat-icon>
-				<span class="full-width" *ngIf="isExpanded || isShowing">Dashboard</span>
+       <span class="full-width" >Dashboard</span>
+      </a>
+			<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>next_week</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">Dropship Managers</span>
 
 				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
 			</mat-list-item>
-			<div class="submenu" [ngClass]="{'expanded' : showSubmenu}" *ngIf="isShowing || isExpanded">
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>assignment</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">Market Place</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>multiline_chart</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">Sales</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>event_note</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">Catalog</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>group</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">Customers</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>show_chart</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">Velocity</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>flight_takeoff</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">Promotions</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>list</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">CMS</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>settings</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">Settings</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>playlist_add</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">STRIPE</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>launch</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">Tenants</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>mobile_screen_share</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">Progressive web app</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <mat-icon class="mat-icons" mat-list-icon>live_help</mat-icon>
+				<span class="full-width" *ngIf="isExpanded || isShowing">Configure</span>
+
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+
+			<!-- <div class="submenu" [ngClass]="{'expanded' : showSubmenu}" *ngIf="isShowing || isExpanded">
 				<a mat-list-item href="...">Submenu Item 1</a>
-				<a mat-list-item href="...">Submenu Item 2</a>
+				<a mat-list-item href="...">Submenu Item 2</a> -->
 				<!-- <mat-list-item (click)="showSubSubMenu = !showSubSubMenu" class="parent">
 					<span class="full-width" *ngIf="isExpanded || isShowing">Nested Menu</span>
 					<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubSubMenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
@@ -35,7 +114,7 @@
 					<mat-list-item>SubSubmenu Item 1</mat-list-item>
 					<mat-list-item>SubSubmenu Item 2</mat-list-item>
 				</div> -->
-			</div>
+			<!-- </div> -->
 
 
 
