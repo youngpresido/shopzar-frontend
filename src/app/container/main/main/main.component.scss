@@ -3,20 +3,36 @@
   height: 100%;
   overflow: hidden;
 }
-
-// mat-sidenav{
-
-//     width: 30%;
-//     border-right: none;
-//     background: #002b5c;
-//     color: white;
-
-//     padding: 16px;
-//     text-align: center;
+// .example-sidenav-content {
+//   display: flex;
+//   height: 100%;
+//   align-items: center;
+//   justify-content: center;
 // }
-// mat-sidenav-content{
-//   width: 100%;
-// }
+.example-sidenav {
+   user-select: none;
+}
+
+
+
+
+
+
+
+
+// // mat-sidenav{
+
+// //     width: 30%;
+// //     border-right: none;
+// //     background: #002b5c;
+// //     color: white;
+
+// //     padding: 16px;
+// //     text-align: center;
+// // }
+// // mat-sidenav-content{
+// //   width: 100%;
+// // }
 .example-sidenav{
   width: 18vw;
   background-color: #3367d6;
@@ -25,10 +41,10 @@
 }
 
 .content{
-  overflow:hidden;
+  overflow-x:hidden;
   height:100%;
 }
-app-main-toolbar{
-  width:100%;
-  overflow: hidden;
-}
+// app-main-toolbar{
+//   width:100%;
+//   overflow: hidden;
+// }

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FlatTreeControl} from '@angular/cdk/tree';
 import {MatTreeFlatDataSource, MatTreeFlattener} from '@angular/material/tree';
+import { MatSidenav } from '@angular/material/sidenav';
+import { ViewChild } from '@angular/core';
 
 /**
  * Food data with nested structure.
@@ -168,6 +170,11 @@ interface ExampleFlatNode {
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
+  @ViewChild('sidenav') sidenav: MatSidenav;
+  isExpanded = true;
+  showSubmenu: boolean = false;
+  isShowing = false;
+  showSubSubMenu: boolean = false;
   private _transformer = (node: FoodNode, level: number) => {
     return {
       expandable: !!node.children && node.children.length > 0,
@@ -186,6 +193,17 @@ export class NavigationComponent implements OnInit {
 
   constructor() {
     this.dataSource.data = TREE_DATA;
+  }
+  mouseenter() {
+    if (!this.isExpanded) {
+      this.isShowing = true;
+    }
+  }
+
+  mouseleave() {
+    if (!this.isExpanded) {
+      this.isShowing = false;
+    }
   }
 
   hasChild = (_: number, node: ExampleFlatNode) => node.expandable;

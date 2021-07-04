@@ -1,4 +1,6 @@
+import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 import { RouterModule } from '@angular/router';
 
 
@@ -30,10 +32,27 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  @ViewChild('sidenav') sidenav: MatSidenav;
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+
+  isExpanded = true;
+  showSubmenu: boolean = false;
+  isShowing = false;
+  showSubSubMenu: boolean = false;
   dataSource = ELEMENT_DATA;
   clickedRows = new Set<PeriodicElement>();
 
+  mouseenter() {
+    if (!this.isExpanded) {
+      this.isShowing = true;
+    }
+  }
+
+  mouseleave() {
+    if (!this.isExpanded) {
+      this.isShowing = false;
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
