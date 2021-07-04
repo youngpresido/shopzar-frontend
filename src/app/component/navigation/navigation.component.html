@@ -28,7 +28,7 @@
 
 				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
 			</mat-list-item>
-      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+      <mat-list-item [routerLink]="'/products'" (click)="showSubmenu = !showSubmenu" class="parent">
         <mat-icon class="mat-icons" mat-list-icon>assignment</mat-icon>
 				<span class="full-width" *ngIf="isExpanded || isShowing">Market Place</span>
 
