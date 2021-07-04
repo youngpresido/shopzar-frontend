@@ -9,9 +9,7 @@
 // .mat-icon-rtl-mirror {
 //   color: white
 // }
-.nav-items{
-  color: white;
-}
+
 mat-tree-node{
   color: white
 }
@@ -19,4 +17,9 @@ mat-tree-node{
 mat-icon {
   position: fixed;
   left: 100px;
+}
+
+
+mat-list-item{
+  color: white;
 }

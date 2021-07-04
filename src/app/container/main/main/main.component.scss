@@ -4,30 +4,31 @@
   overflow: hidden;
 }
 
-mat-sidenav{
+// mat-sidenav{
 
-    width: 30%;
-    border-right: none;
-    background: #002b5c;
-    color: white;
+//     width: 30%;
+//     border-right: none;
+//     background: #002b5c;
+//     color: white;
 
-    padding: 16px;
-    text-align: center;
-}
+//     padding: 16px;
+//     text-align: center;
+// }
 // mat-sidenav-content{
 //   width: 100%;
 // }
 .example-sidenav{
-  width: 14vw;
+  width: 18vw;
   background-color: #3367d6;
-  padding: 25px;
+  // padding: 25px;
 
 }
 
 .content{
-  // overflow:hidden;
+  overflow:hidden;
+  height:100%;
 }
 app-main-toolbar{
-  width:70%;
+  width:100%;
   overflow: hidden;
 }
