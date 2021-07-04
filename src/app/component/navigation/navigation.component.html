@@ -22,7 +22,7 @@
         <mat-icon class="mat-icons" mat-list-icon>home</mat-icon>
        <span class="full-width" >Dashboard</span>
       </a>
-			<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+			<mat-list-item [routerLink]="'/orders'" (click)="showSubmenu = !showSubmenu" class="parent">
         <mat-icon class="mat-icons" mat-list-icon>next_week</mat-icon>
 				<span class="full-width" *ngIf="isExpanded || isShowing">Dropship Managers</span>
 
