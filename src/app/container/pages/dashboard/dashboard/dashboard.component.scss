@@ -3,14 +3,48 @@
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   width: 74vw;
-  height: 80vh;
+  height: 180vh;
   position: relative;
-  left: 119px;
-  top: 38px;
-  list-style: none;
-  -ms-box-orient: horizontal;
+  left: 61px;
+  top: 54px;
 }
 
+.first-level {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.map-card {
+ width: 46vw;
+ height: 38vh
+}
+
+.trofe-card{
+  width: 23vw;
+  height: 55vh;
+  position: relative;
+  left: 10px;
+}
+
+.table-card {
+  width: 25vw;
+  height: 49vh;
+  position: relative;
+  bottom: 103px;
+}
+
+.graph-card{
+  width: 44vw;
+  height: 31vh;
+  position: relative;
+  bottom: -22px;
+  left: 13px;
+}
+
+.second-container{
+  width: 100%;
+}
 .left-content {
   display: flex;
   width: 30vw;
