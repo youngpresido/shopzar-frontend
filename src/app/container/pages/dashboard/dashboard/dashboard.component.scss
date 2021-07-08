@@ -41,7 +41,11 @@
   bottom: -22px;
   left: 13px;
 }
-
+.second-level{
+  width: 100%;
+  position: relative;
+  bottom: 60px;
+}
 .second-container{
   width: 100%;
 }
@@ -60,7 +64,9 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  left: 45px;
+  left: 499px;
+  bottom: 487px;
+
 }
 
 .first-contaner {

@@ -1,7 +1,16 @@
 .example-toolbar {
   background-color: #eeeeee;
-  width: 100%;
+  width: inherit;
   height: 10vh;
+  // position: fixed;
+}
+
+.mat-drawer-content {
+  position: fixed;
+  z-index: 1;
+  display: block;
+  height: in;
+  /* overflow: auto; */
 }
 
 .mat-icon.mat-accent {
@@ -20,13 +29,14 @@ mat-form-field {
 .seerch-label {
   font-size: 13px;
   position: relative;
-  right: 270px;
+  right: 256px;
+  top: -11px;
 }
 
 .search-icon {
   position: relative;
-  right: 340px;
-  top: 10px;
+  right: 323px;
+  top: -2px;
 }
 
 .mat-button-wrapper {
@@ -34,9 +44,12 @@ mat-form-field {
 }
 
 input {
-  width: 297px;
+  position: relative;
+  left: 101px;
+  top: 1px;
+  width: 387px;
   height: 28px;
-  padding-left: 30px;
+  padding-left: 50px;
   padding: 5px;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);

@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { RefundsComponent } from './refunds/refunds.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: RefundsComponent,
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

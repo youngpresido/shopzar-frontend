@@ -191,12 +191,11 @@ th.mat-header-cell {
   color: #000000;
   padding: 1.5rem 2rem;
 }
+.mat-sidenav{
+  position: absolute;
+}
 
 .mat-drawer-inner-container {
-  width: 100%;
-  height: 100%;
-  /* overflow: auto; */
-  // -webkit-overflow-scrolling: touch;
   overflow: hidden;
 
 }
@@ -214,16 +213,90 @@ th.mat-header-cell {
   padding: 0;
 }
 
-#mat-drawer-inner-container {
-  width: 100%;
-  height: 100%;
+.mat-drawer-content {
   overflow: hidden;
 }
 
-.mat-sidenav{
-  position: absolute;
+.table-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 119px;
+  top: 38px;
 }
 
+.group{
+  width: 966px;
+}
+
+table {
+width: 80%;
+left: 119px;
+top: 38px;
+}
+.text {
+position: relative;
+left: 119px;
+top: 38px;
+}
+
+.top {
+width: 80%;
+display: flex;
+
+}
+
+.search-bar{
+width: 307px;
+height: 28px;
+padding-left: 30px;
+padding: 5px;
+border-radius: 10px;
+background: rgb(236, 236, 236);
+border: 2px solid rgb(212, 212, 212);
+}
+
+.text{
+  font-weight: bold;
+  position: fixed;
+  top: 88px;
+  left: 396px;
+}
+
+.form-placeholer{
+  display: flex;
+}
+h5{
+  position: fixed;
+  left: 793px;
+  top: 145px;
+}
+
+.top-form-1{
+  width: 200px;
+  position: fixed;
+  left: 160px;
+  top: 2px;
+}
+
+.top-form-2{
+  width: 200px;
+  position: fixed;
+  left: 230px;
+  top: 2px;
+}
+
+.seerch-lab {
+  position: relative;
+  bottom: 18px;
+  left: 38px;
+}
+
+.search-icon-2 {
+  position: relative;
+  bottom: 8px;
+  right: 28px;
+}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
