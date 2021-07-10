@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './container/main/main/main.component';
-import { DashboardComponent } from './container/pages/dashboard/dashboard/dashboard.component';
 import { DashComponent } from './dash/dash.component';
 
 
@@ -9,9 +8,11 @@ const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '', component: MainComponent,
     children:[
-      { path:"dashboard", component: DashboardComponent },
+      { path:"dashboard",  loadChildren: () => import('./container/pages/dashboard/dashboard.module').then(m => m.DashboardModule) },
+      // { path:"dashboard", component: DashboardComponent },
       { path:"products",  loadChildren: () => import('./container/pages/products/products.module').then(m => m.ProductsModule) },
       { path:"orders",  loadChildren: () => import('./container/pages/order/order.module').then(m => m.OrderModule) },
+      { path:"sellers",  loadChildren: () => import('./container/pages/sellers/sellers.module').then(m => m.SellersModule) },
       { path:"seller-review",  loadChildren: () => import('./container/pages/seller-review/seller-review.module').then(m => m.SellerReviewModule) },
       { path:"transactions",  loadChildren: () => import('./container/pages/transactions/transactions.module').then(m => m.TransactionsModule) },
       { path:"bulk-upload-products",  loadChildren: () => import('./container/pages/bulk-upload-products/bulk-upload-products.module').then(m => m.BulkUploadProductsModule) },

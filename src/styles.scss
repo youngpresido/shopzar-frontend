@@ -226,13 +226,22 @@ th.mat-header-cell {
 }
 
 .group{
-  width: 966px;
+  width: 975px;
 }
 
 table {
 width: 80%;
 left: 119px;
 top: 38px;
+}
+
+th{
+  background-color: #3367d6;
+  color: white;
+}
+
+.elev-table {
+  width: 100%;
 }
 .text {
 position: relative;
