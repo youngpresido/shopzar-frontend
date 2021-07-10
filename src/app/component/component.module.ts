@@ -9,6 +9,7 @@ import { MaterialUiModule } from '../utilities/material-ui.module';
 import { TestComponent } from './test/test.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { TableComponent } from './table/table.component';
 
 
 
