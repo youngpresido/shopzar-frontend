@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './container/main/main/main.component';
-import { DashboardComponent } from './container/pages/dashboard/dashboard/dashboard.component';
 import { DashComponent } from './dash/dash.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-  { path: '', component: MainComponent,
+  {
+    path: '',
+    component: MainComponent,
     children:[
-      { path:"dashboard", component: DashboardComponent },
+      { path:"dashboard", component: DashComponent },
       { path:"products",  loadChildren: () => import('./container/pages/products/products.module').then(m => m.ProductsModule) },
       { path:"orders",  loadChildren: () => import('./container/pages/order/order.module').then(m => m.OrderModule) },
       { path:"seller-review",  loadChildren: () => import('./container/pages/seller-review/seller-review.module').then(m => m.SellerReviewModule) },
@@ -25,6 +26,7 @@ const routes: Routes = [
       { path:"add-category",  loadChildren: () => import('./container/pages/add-category/add-category.module').then(m => m.AddCategoryModule) }
 
     ]
+
   },
   // {
   //   path: 'onboarding',
