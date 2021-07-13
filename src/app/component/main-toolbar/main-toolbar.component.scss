@@ -16,8 +16,8 @@
 .mat-icon.mat-accent {
   color: #5e5e5e;
   position: relative;
-  left: 584px;
-  top: 4px;
+  left: 504px;
+  top: 3px;
 }
 
 mat-form-field {
@@ -30,13 +30,14 @@ mat-form-field {
   font-size: 13px;
   position: relative;
   right: 256px;
-  top: -11px;
+  // top: -5px;
 }
 
 .search-icon {
   position: relative;
   right: 323px;
-  top: -2px;
+  top: 10px;
+  margin-right:2px;
 }
 
 .mat-button-wrapper {

@@ -7,6 +7,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MaterialUiModule } from '../utilities/material-ui.module';
 import { TestComponent } from './test/test.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { TableComponent } from './table/table.component';
 
 
 
@@ -15,14 +18,15 @@ import { TestComponent } from './test/test.component';
     NavigationComponent,
     MainToolbarComponent,
     UserDetailsComponent,
-    TestComponent
-  ],
+    TestComponent,
+    ],
   imports: [
     CommonModule,
     MaterialUiModule,
     RouterModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgApexchartsModule
   ],
   exports: [
     NavigationComponent,

@@ -1,10 +1,35 @@
-.main-container{
+// .main-container{
+//   position: relative;
+//   left: 60px;
+//   bottom:15px;
+// }
 
+h2{
+  position: relative;
+  left: 60px;
+  bottom:-30px;
 }
 
 .form-container{
-display: flex;
-flex-direction: column;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  position: relative;
+  left: 36px;
+  bottom:-37px;
+  padding: 30px;
+
+}
+h3{
+  position: relative;
+  bottom: -7px;
+}
+
+h4{
+  position: relative;
+  left: 509px;
+  top: -33px;
 }
 .first-container{
   display: flex;
@@ -13,4 +38,18 @@ flex-direction: column;
 .second-container{
   display: flex;
   flex-direction: column;
+}
+.top-form-3{
+  display: inline-block;
+    position: relative;
+    text-align: left;
+    left: 555px;
+    bottom: 49px;
+}
+
+
+
+table {
+  width: 100%;
+  color:white ;
 }

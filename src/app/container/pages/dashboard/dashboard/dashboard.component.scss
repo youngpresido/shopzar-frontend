@@ -20,6 +20,20 @@
  height: 38vh
 }
 
+#chart {
+  max-width: 650px;
+  margin: 35px auto;
+  position: relative;
+  bottom: 45px;
+}
+
+#chartt {
+  max-width: 650px;
+  margin: 35px auto;
+  position: relative;
+  bottom: 22px;
+}
+
 .trofe-card{
   width: 23vw;
   height: 55vh;
@@ -38,7 +52,7 @@
   width: 44vw;
   height: 31vh;
   position: relative;
-  bottom: -22px;
+  bottom: -33px;
   left: 13px;
 }
 .second-level{
@@ -65,8 +79,17 @@
   flex-direction: column;
   position: relative;
   left: 499px;
-  bottom: 487px;
+  bottom: 528px;
+}
 
+.mt-5{
+  position: relative;
+  bottom: -20px;
+  margin-top: 38px;
+}
+
+.mt-button {
+  background-color: #3367d6;
 }
 
 .first-contaner {
@@ -102,7 +125,7 @@ left: 45px;
 .second-container {
   display: flex;
   width: 30vw;
-  height: 38vh;
+  height: 70vh;
   position: relative;
   top: 72px;
 }
@@ -143,7 +166,3 @@ left: 45px;
   font-weight: bold;
 }
 
-mat-icon{
-  color: #3367d6;
-
-}

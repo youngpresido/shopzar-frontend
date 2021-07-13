@@ -1,11 +1,35 @@
-
-
 <div class="dashboard-container flex flex-wrap">
   <div class="first-level">
-    <mat-card class="map-card">Simple card</mat-card>
-    <mat-card class="trofe-card">Simple card</mat-card>
-    <mat-card class="table-card">Simple card</mat-card>
-    <mat-card class="graph-card">Simple card</mat-card>
+    <mat-card class="map-card">
+      <div id="chart">
+        <apx-chart
+          [series]="chartOptions.series"
+          [chart]="chartOptions.chart"
+          [xaxis]="chartOptions.xaxis"
+          [stroke]="chartOptions.stroke"
+          [dataLabels]="chartOptions.dataLabels"
+          [yaxis]="chartOptions.yaxis"
+          [labels]="chartOptions.labels"
+          [legend]="chartOptions.legend"
+          [title]="chartOptions.title"
+          [subtitle]="chartOptions.subtitle"
+        ></apx-chart>
+      </div>
+    </mat-card>
+    <mat-card class="trofe-card">
+     <app-table></app-table>
+    </mat-card>
+    <mat-card class="table-card">
+      <h3 class="mt-5">Congratulation Goclick Agency</h3>
+      <h3 class="mt-5">Total Order</h3>
+      <h1 class="mt-5">68</h1>
+      <h3 class="mt-5">You have done 100%</h3>
+      <h3 class="mt-5">more Sales today</h3>
+      <button class="mt-5 mt-button my-sales" mat-raised-button>view sales</button>
+    </mat-card>
+    <mat-card class="graph-card">
+      <app-bar-chart></app-bar-chart>
+    </mat-card>
   </div>
   <div class="second-level">
   <div class="left-content">

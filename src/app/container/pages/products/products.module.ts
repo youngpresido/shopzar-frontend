@@ -5,7 +5,7 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { ProductsComponent } from './products/products.component';
 import { ComponentModule } from 'src/app/component/component.module';
 import { MaterialUiModule } from 'src/app/utilities/material-ui.module';
-import { DashboardComponent } from '../dashboard/dashboard/dashboard.component';
+// import { DashboardComponent } from '../dashboard/dashboard/dashboard.component';
 import { OrderComponent } from '../order/order/order.component';
 import { SellerReviewComponent } from '../seller-review/seller-review/seller-review.component';
 import { SellersComponent } from '../sellers/sellers/sellers.component';
@@ -17,7 +17,7 @@ import { BulkUploadProductsComponent } from '../bulk-upload-products/bulk-upload
 @NgModule({
   declarations: [
     ProductsComponent,
-    DashboardComponent,
+    // DashboardComponent,
     OrderComponent,
     SellersComponent,
     SellerReviewComponent,

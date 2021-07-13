@@ -25,7 +25,7 @@ import { CardComponent } from './card/card.component';
   declarations: [
     AppComponent,
     DashComponent,
-    CardComponent
+    CardComponent,
   ],
   imports: [
     CommonModule,
@@ -43,7 +43,9 @@ import { CardComponent } from './card/card.component';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

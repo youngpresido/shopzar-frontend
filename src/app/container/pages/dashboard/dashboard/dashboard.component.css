@@ -1,0 +1,23 @@
+.dashboard-container{
+  width: 100%;
+  margin-left: -50px;
+}
+.map-card{
+  height: 300px;
+  margin-right: 30px;
+}
+
+.first-level{
+  margin-bottom: 30px;
+}
+.table-card{
+  margin-top:50px;
+  width: 300px;
+  height: 400px;
+  padding:10px;
+}
+.graph-card{
+  height: 280px;
+  margin-top:20px;
+}
+
