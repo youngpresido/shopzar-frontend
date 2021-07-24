@@ -167,7 +167,7 @@ interface ExampleFlatNode {
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.scss']
+  styleUrls: ['./navigation.component.scss', './navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
   @ViewChild('sidenav') sidenav: MatSidenav;
@@ -175,6 +175,118 @@ export class NavigationComponent implements OnInit {
   showSubmenu: boolean = false;
   isShowing = false;
   showSubSubMenu: boolean = false;
+  nav_items = [
+
+      {
+        "name":"Dropship managers",
+        "id": 2,
+        "url":"/orders",
+        "isOpen": false,
+        "icon":"next_week",
+        "children":[
+          {
+            "name":"Dropship managers",
+            "url":"/orders",
+          }
+        ]
+      },
+      {
+        "name":"Market Place",
+        "id": 3,
+        "url":"/orders",
+        "isOpen": false,
+        "icon":"assignment",
+        "children":[]
+      },
+      {
+        "name":"Sales",
+        "id": 4,
+        "url":"/orders",
+        "isOpen": false,
+        "icon":"multiline_chart",
+        "children":[]
+      },
+      {
+        "name":"Catalog",
+        "id": 5,
+        "url":"/orders",
+        "isOpen": false,
+        "icon":"event_note",
+        "children":[]
+      },
+      {
+        "name":"Customers",
+        "id": 6,
+        "url":"/orders",
+        "isOpen": false,
+        "icon":"group",
+        "children":[]
+      },
+      {
+        "name":"Velocity",
+        "id": 7,
+        "url":"/orders",
+        "isOpen": false,
+        "icon":"show_chart",
+        "children":[]
+      },
+      {
+        "name":"Promotions",
+        "id": 8,
+        "url":"/orders",
+        "isOpen": false,
+        "icon":"flight_takeoff",
+        "children":[]
+      },
+      {
+        "name":"CMS",
+        "id": 9,
+        "url":"/orders",
+        "icon":"list",
+        "isOpen": false,
+        "children":[]
+      },
+      {
+        "name":"Settings",
+        "id": 10,
+        "url":"/orders",
+        "isOpen": false,
+        "icon":"settings",
+        "children":[]
+      },
+      {
+        "name":"STRIPE",
+        "id": 11,
+        "url":"/orders",
+        "icon":"list_add",
+        "isOpen": false,
+        "children":[]
+      },
+      {
+        "name":"Tenants",
+        "id": 12,
+        "url":"/orders",
+        "isOpen": false,
+        "icon":"launch",
+        "children":[]
+      },
+      {
+        "name":"Progressive web app",
+        "id": 13,
+        "url":"/orders",
+        "icon":"mobile_screen_share",
+        "isOpen": false,
+        "children":[]
+      },
+      {
+        "name":"Configure",
+        "id": 14,
+        "url":"/orders",
+        "isOpen": false,
+        "icon":"live_help",
+        "children":[]
+      }
+  ]
   private _transformer = (node: FoodNode, level: number) => {
     return {
       expandable: !!node.children && node.children.length > 0,
